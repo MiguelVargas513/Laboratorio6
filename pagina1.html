@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">EcoTurismo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pagina1.html">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina2.html">Consejos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina3.html">Proyectos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="display-4 text-center mb-4">Destinos Ecológicos</h1>
+        <div id="ecoCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="img/destino 1.jpg" class="d-block w-100" alt="Selva">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/destino 2.jpg" class="d-block w-100" alt="Ecolodge">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/destino 3.jpg" class="d-block w-100" alt="Vida silvestre">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#ecoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#ecoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card eco-card h-100">
+                    <img src="img/Costarica.jpg" class="card-img-top" alt="Ecoturismo">
+                    <div class="card-body">
+                        <h3>Costa Rica</h3>
+                        <p class="text-justify">Pionero en ecoturismo, ofrece selvas tropicales, volcanes y playas vírgenes. El 25% de su territorio son áreas protegidas.</p>
+                        <p class="text-justify">Destacan el Parque Nacional Corcovado y los canopy tours en Monteverde, que permiten explorar el dosel del bosque nuboso.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card eco-card h-100">
+                    <img src="img/Noruega.jpg" class="card-img-top" alt="Noruega">
+                    <div class="card-body">
+                        <h3>Noruega</h3>
+                        <p class="text-justify">Líder en turismo sostenible con sus fiordos certificados. Ofrece avistamiento de auroras boreales en cabañas ecológicas.</p>
+                        <p class="text-justify">Los cruceros híbridos eléctricos permiten explorar los fiordos con mínimo impacto ambiental, respetando los ecosistemas marinos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card eco-card h-100">
+                    <img src="img/Nueva Zelanda.jpg" class="card-img-top" alt="Nueva Zelanda">
+                    <div class="card-body">
+                        <h3>Nueva Zelanda</h3>
+                        <p class="text-justify">Pionera en conservación con el proyecto "Predator Free 2050" para eliminar especies invasoras y proteger la fauna nativa.</p>
+                        <p class="text-justify">El Great Walk network ofrece rutas de trekking sostenibles a través de paisajes que parecen de otro planeta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion mt-5" id="ecoAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        ¿Qué hace a un destino "ecológico"?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#ecoAccordion">
+                    <div class="accordion-body">
+                        Un destino ecológico debe minimizar el impacto ambiental, apoyar la conservación, beneficiar a las comunidades locales y ofrecer educación ambiental. Certificaciones como la CST en Costa Rica o Green Destinations validan estos criterios.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

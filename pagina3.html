@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoturismo - Proyectos</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">EcoTurismo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina1.html">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina2.html">Consejos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pagina3.html">Proyectos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="display-4 text-center mb-4">Proyectos de Conservación</h1>
+        <div class="toast show mb-4" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-success text-white">
+                <strong class="me-auto">¡Puedes ayudar!</strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Muchos proyectos aceptan voluntarios o donaciones para continuar su labor.
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="col">
+                <div class="card h-100 border-success">
+                    <img src="img/tortugas.jpg" class="card-img-top" alt="Tortugas marinas">
+                    <div class="card-body">
+                        <h3>Protección de Tortugas</h3>
+                        <p class="text-justify">En playas de Costa Rica, México y Grecia, voluntarios protegen nidos de tortugas marinas de depredadores y saqueo.</p>
+                        <p class="text-justify">Los ecoturistas pueden participar en liberaciones de crías, siempre guiados por biólogos para no alterar el proceso natural.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-success">
+                    <img src="img/reforestacion.jpg" class="card-img-top" alt="Reforestación">
+                    <div class="card-body">
+                        <h3>Reforestación Participativa</h3>
+                        <p class="text-justify">En Nepal y Brasil, programas permiten a turistas plantar árboles nativos para compensar su huella de carbono.</p>
+                        <p class="text-justify">Cada árbol lleva una placa con el nombre del colaborador y se monitorea su crecimiento, restaurando ecosistemas degradados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-success">
+                    <img src="img/santuario.jpg" class="card-img-top" alt="Vida silvestre">
+                    <div class="card-body">
+                        <h3>Santuario de Vida Silvestre</h3>
+                        <p class="text-justify">En Sudáfrica y Kenia, reservas rehabilitan animales heridos o rescatados del tráfico ilegal.</p>
+                        <p class="text-justify">Los visitantes aprenden sobre conservación sin interacción directa con los animales, respetando su bienestar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mb-5">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#volunteerModal">
+                ¿Cómo ser voluntario?
+            </button>
+        </div>
+
+        <div class="modal fade" id="volunteerModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-success text-white">
+                        <h5 class="modal-title">Voluntariado en Conservación</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/voluntarios.jpg" class="img-fluid mb-3" alt="Voluntarios">
+                        <p class="text-justify"><strong>Requisitos:</strong> Mayoría de edad, seguro médico, vacunas al día y compromiso ético con la conservación.</p>
+                        <p class="text-justify"><strong>Proceso:</strong> Investigar organizaciones acreditadas, completar aplicación, posible capacitación previa.</p>
+                        <p class="text-justify"><strong>Duración:</strong> Programas desde 1 semana hasta 6 meses, según proyecto y ubicación.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
